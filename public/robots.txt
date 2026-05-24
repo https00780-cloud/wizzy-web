@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Internal fixture used for OG image generation — not user-facing
+Disallow: /_og-card.html
+
+Sitemap: https://wizzyaddon.com/sitemap.xml
+
+# LLM / AI crawlers — site summary at /llms.txt
