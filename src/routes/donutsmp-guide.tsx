@@ -91,7 +91,7 @@ function GuidePage() {
 
         <figure className="mt-10 overflow-hidden rounded-2xl border border-border bg-card">
           <img
-            src="/screenshots/base-finder-Wizzy-addon.png"
+            src="/screenshots/wizzy-deepslate-screenshot.png"
             alt="Wizzy Addon's base finder and StorageESP locating a hidden DonutSMP base through walls"
             className="aspect-[16/10] w-full object-cover"
             loading="lazy"

@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Wizzy Addon — the only Meteor Client addon with a working fly bypass on DonutSMP. Free .jar download, 90+ modules for Crystal PvP, base finding, and AH sniping on Minecraft 1.21.11.",
+          "Wizzy Addon — Meteor Client addon for DonutSMP with full deepslate bypass. Free .jar download, 90+ modules for Crystal PvP, base finding, and AH sniping on Minecraft 1.21.11.",
       },
       {
         name: "keywords",
@@ -95,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Only working fly bypass on DonutSMP. 90+ Meteor Client modules. Free .jar for Minecraft 1.21.11.",
+          "Full deepslate bypass on DonutSMP. 90+ Meteor Client modules. Free Wizzy Addon .jar for Minecraft 1.21.11.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://wizzyaddon.com" },
@@ -110,14 +110,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:image:alt",
         content:
-          "Wizzy Addon × DonutSMP — the only working DonutSMP fly bypass. Free Meteor Client addon for Minecraft 1.21.11.",
+          "Wizzy Addon × DonutSMP — full deepslate bypass. Free Meteor Client addon for Minecraft 1.21.11.",
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Wizzyaddon" },
       { name: "twitter:title", content: "Wizzy Addon — Best Meteor Client Addon for DonutSMP" },
       {
         name: "twitter:description",
-        content: "Only working fly bypass on DonutSMP. 90+ Meteor Client modules. Free download.",
+        content: "Full deepslate bypass on DonutSMP. 90+ Meteor Client modules. Free Wizzy Addon download.",
       },
       {
         name: "twitter:image",
@@ -125,7 +125,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         name: "twitter:image:alt",
-        content: "Wizzy Addon × DonutSMP — the only working DonutSMP fly bypass.",
+        content: "Wizzy Addon × DonutSMP — full deepslate bypass.",
       },
       { name: "theme-color", content: "#3b82f6" },
       { name: "format-detection", content: "telephone=no" },
@@ -155,7 +155,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           image: "https://wizzyaddon.com/og-card.png",
           logo: "https://wizzyaddon.com/favicon.png",
           description:
-            "Wizzy Addon — the Meteor Client addon for DonutSMP and Minecraft 1.21.11. Working fly bypass, 90+ modules, free .jar download.",
+            "Wizzy Addon — the Meteor Client addon for DonutSMP and Minecraft 1.21.11. Full deepslate bypass, 90+ modules, free .jar download.",
           inLanguage: "en",
           potentialAction: {
             "@type": "SearchAction",

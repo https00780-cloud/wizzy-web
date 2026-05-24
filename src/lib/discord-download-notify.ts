@@ -15,8 +15,8 @@ export async function notifyDiscordDownload(
   const body = {
     embeds: [
       {
-        title: "Wizzy Addon download",
-        description: `Someone downloaded **${DOWNLOAD_FILENAME}**.`,
+        title: "Wizzy Addon — new download",
+        description: `**${DOWNLOAD_FILENAME}** was downloaded from wizzyaddon.com.\n\n**Wizzy Addon** · full deepslate bypass · Meteor Client addon for DonutSMP`,
         color: 0x3b82f6,
         fields: [
           { name: "Total downloads", value: String(totalCount), inline: true },
@@ -28,6 +28,7 @@ export async function notifyDiscordDownload(
             inline: false,
           },
         ],
+        footer: { text: "Wizzy Addon · full deepslate bypass" },
         timestamp: when,
       },
     ],

@@ -67,7 +67,7 @@ const faqsForSeo: Array<[string, string]> = [
 
 const HOME_TITLE = "Wizzy Addon Download — Best Meteor Client Addon for DonutSMP (Free .jar)";
 const HOME_DESC =
-  "Wizzy Addon download for DonutSMP — the only Meteor Client addon with a working fly bypass. Best addon donut smp pick for AH sniping, base finding & Crystal PvP. Free .jar for Minecraft 1.21.11.";
+  "Wizzy Addon download for DonutSMP — Meteor Client addon with full deepslate bypass. Best addon donut smp pick for AH sniping, base finding & Crystal PvP. Free .jar for Minecraft 1.21.11.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -167,7 +167,7 @@ function Hero() {
             data-testid="hero-version-badge"
           >
             <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-primary shadow-glow" />
-            v3.2.0 · 1.21.11 · Fly bypass live
+            v3.2.0 · 1.21.11 · Full deepslate bypass
           </div>
           <h1 className="reveal reveal-delay-1 mt-6 text-[2.6rem] font-bold leading-[1.05] tracking-tight md:text-6xl">
             <span className="text-gradient-brand">Wizzy Addon download</span> — the Meteor Client
@@ -177,7 +177,7 @@ function Hero() {
             Looking for <strong className="font-semibold text-foreground">Wizzy Addon donutsmp</strong>{" "}
             or the <strong className="font-semibold text-foreground">best addon donut smp</strong>{" "}
             pick in 2026? Wizzy Addon ships the only{" "}
-            <span className="font-semibold text-foreground">working fly bypass on DonutSMP</span>, a
+            <span className="font-semibold text-foreground">full deepslate bypass on DonutSMP</span>, a
             sub-110ms AH sniper, a stacked base-finder suite, and 90+ more modules — all in one free
             .jar. Drop it in your mods folder and press Right Shift.
           </p>
@@ -220,12 +220,12 @@ function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/80" />
               <span className="h-2.5 w-2.5 rounded-full bg-green-500/80" />
               <span className="ml-3 truncate font-mono text-xs text-muted-foreground">
-                Wizzy · StorageESP + Base Finder · DonutSMP
+                Wizzy · deepslate bypass · DonutSMP
               </span>
             </div>
             <img
-              src="/screenshots/base-finder-Wizzy-addon.png"
-              alt="Wizzy Addon StorageESP and Base Finder modules locating a hidden DonutSMP storage room through walls"
+              src="/screenshots/wizzy-deepslate-screenshot.png"
+              alt="Wizzy Addon Shulker Box tooltip and inventory overlay on DonutSMP — full deepslate bypass in action"
               className="aspect-[16/10] w-full object-cover"
               loading="eager"
               width={1280}
@@ -234,7 +234,7 @@ function Hero() {
             />
           </div>
           <figcaption className="mt-3 px-1 font-mono text-xs text-muted-foreground">
-            Real screenshot — Wizzy's StorageESP rendering a buried base on DonutSMP. No mock UI.
+            Real screenshot — Wizzy Addon full deepslate bypass on DonutSMP. No mock UI.
           </figcaption>
         </figure>
       </div>
@@ -248,7 +248,7 @@ function StatsMarquee() {
     "90+ modules",
     "Sub-110ms AH sniper",
     "1.21.11 day-one support",
-    "Only working DonutSMP fly bypass",
+    "Full deepslate bypass",
     "Patched within 24h",
     "Free .jar — no key system",
     "Open-download on GitHub",
@@ -275,20 +275,17 @@ function FlyBypassBanner() {
         <div className="flex items-start gap-3">
           <Plane className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
           <p className="text-sm leading-relaxed md:text-base">
-            <span className="font-semibold text-foreground">
-              The only working fly bypass on DonutSMP.
-            </span>{" "}
-            Every other Meteor Client addon gets flagged. Wizzy's fly config is re-tuned within 24
-            hours of every DonutSMP anti-cheat update — usually before the server staff have
-            finished pushing it.
+            <span className="font-semibold text-foreground">Full deepslate bypass on DonutSMP.</span>{" "}
+            Wizzy Addon ships the deepslate density scan, shulker ESP, and stash tools other Meteor
+            addons skip — re-tuned within 24 hours of every DonutSMP anti-cheat update.
           </p>
         </div>
         <Link
-          to="/donutsmp-fly-bypass"
+          to="/donutsmp-guide"
           className="shrink-0 rounded-full border border-primary/50 bg-card px-4 py-2 text-xs font-semibold text-foreground transition hover:bg-primary/10"
           data-testid="banner-bypass-guide"
         >
-          How the bypass works →
+          Deepslate bypass guide →
         </Link>
       </div>
     </section>
@@ -340,9 +337,9 @@ function WhatIsWizzy() {
 const featureList = [
   {
     Icon: Plane,
-    title: "DonutSMP fly bypass",
-    body: "The headline feature. Tuned weekly against Donut's anti-cheat profile. Toggle, fly, land, nobody notices. Speed limits, NoFall, and motion smoothing baked in.",
-    href: "/donutsmp-fly-bypass",
+    title: "Full deepslate bypass",
+    body: "The headline feature. Scans dense deepslate clusters and player stashes through walls. Shulker ESP, worth tooltips, and chunk density tuned for DonutSMP.",
+    href: "/donutsmp-guide",
   },
   {
     Icon: Radar,
@@ -1073,13 +1070,12 @@ function BypassDiagram() {
             How it works
           </div>
           <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-            The Wizzy fly bypass, packet by packet.
+            Full deepslate bypass — how Wizzy finds bases.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Most "fly bypasses" send vanilla creative motion and pray. Wizzy doesn't. Here's the
-            actual packet flow that lets Wizzy's{" "}
-            <span className="font-mono text-foreground">Donut Bypass</span> mode survive on
-            DonutSMP.
+            Most addons only highlight vanilla blocks. Wizzy's{" "}
+            <span className="font-mono text-foreground">deepslate density scan</span> flags unnatural
+            clusters, shulker boxes, and stash rooms through deepslate on DonutSMP.
           </p>
         </div>
 
@@ -1179,15 +1175,15 @@ function ModulePreviewGallery() {
           {/* Real screenshot — StorageESP / Base Finder */}
           <figure className="col-span-1 overflow-hidden rounded-2xl border border-border bg-card md:col-span-2 lg:col-span-2 lg:row-span-2">
             <img
-              src="/screenshots/base-finder-Wizzy-addon.png"
-              alt="Wizzy Addon StorageESP and Base Finder modules locating a hidden DonutSMP storage room"
+              src="/screenshots/wizzy-deepslate-screenshot.png"
+              alt="Wizzy Addon full deepslate bypass — shulker box worth tooltip on DonutSMP"
               className="aspect-[16/10] w-full object-cover"
               loading="lazy"
               width={1280}
               height={800}
             />
             <figcaption className="border-t border-border px-5 py-3 font-mono text-xs text-muted-foreground">
-              StorageESP + Base Finder · Real DonutSMP capture
+              Full deepslate bypass · Real DonutSMP capture
             </figcaption>
           </figure>
 

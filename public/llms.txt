@@ -1,19 +1,18 @@
 # Wizzy Addon — https://wizzyaddon.com
 
-> Free Meteor Client addon for Minecraft Java 1.21.11 and DonutSMP. Ships the only working public DonutSMP fly bypass, 90+ modules, and a direct .jar download.
+> Free Meteor Client addon for Minecraft Java 1.21.11 and DonutSMP. Full deepslate bypass, 90+ modules, and a direct .jar download.
 
 ## Primary pages
 
 - Home / download: https://wizzyaddon.com/
 - Install guide: https://wizzyaddon.com/install
-- DonutSMP fly bypass: https://wizzyaddon.com/donutsmp-fly-bypass
 - DonutSMP guide: https://wizzyaddon.com/donutsmp-guide
 - Module list: https://wizzyaddon.com/modules
 - Blog: https://wizzyaddon.com/posts
 
 ## Target topics
 
-Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, donutsmp fly bypass, ah sniper, base finder, crystal pvp
+Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, full deepslate bypass, ah sniper, base finder, crystal pvp
 
 ## Download
 

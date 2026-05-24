@@ -87,7 +87,7 @@ export function SiteFooter() {
             <strong className="font-medium text-foreground">Wizzy Addon</strong> is the free{" "}
             <strong className="font-medium text-foreground">Wizzy Addon download</strong> for
             DonutSMP — a Meteor Client addon for Minecraft 1.21.11 with the only public{" "}
-            <strong className="font-medium text-foreground">DonutSMP fly bypass</strong>, AH sniper,
+            <strong className="font-medium text-foreground">full deepslate bypass</strong>, AH sniper,
             and base-finder stack. Often ranked among the{" "}
             <strong className="font-medium text-foreground">best meteor client addons donutsmp</strong>{" "}
             players still use in 2026. Not affiliated with Mojang, Microsoft, Meteor Development, or

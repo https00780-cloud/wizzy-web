@@ -55,7 +55,7 @@ export function pageHead({
       { property: "og:image:secure_url", content: OG_IMAGE },
       {
         property: "og:image:alt",
-        content: `${SITE_NAME} — DonutSMP fly bypass and Meteor Client addon for Minecraft ${MC_VERSION}`,
+        content: `${SITE_NAME} — full deepslate bypass and Meteor Client addon for Minecraft ${MC_VERSION}`,
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Wizzyaddon" },
@@ -122,7 +122,7 @@ export function softwareApplicationSchema() {
     applicationSubCategory: "Minecraft Mod",
     operatingSystem: "Windows, macOS, Linux",
     description:
-      "Wizzy Addon download — Meteor Client addon for DonutSMP with the only working fly bypass. 90+ modules for Crystal PvP, base finding, and AH sniping on Minecraft 1.21.11.",
+      "Wizzy Addon download — Meteor Client addon for DonutSMP with full deepslate bypass. 90+ modules for Crystal PvP, base finding, and AH sniping on Minecraft 1.21.11.",
     softwareVersion: SOFTWARE_VERSION,
     downloadUrl: `${SITE_URL}${TRACKED_DOWNLOAD_URL}`,
     installUrl: `${SITE_URL}/install`,
@@ -130,7 +130,7 @@ export function softwareApplicationSchema() {
     image: OG_IMAGE,
     fileSize: "2.4 MB",
     featureList: [
-      "DonutSMP fly bypass",
+      "Full deepslate bypass",
       "AH Sniper",
       "Base finder suite",
       "Crystal PvP macros",
