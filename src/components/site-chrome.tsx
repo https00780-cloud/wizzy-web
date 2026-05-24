@@ -47,11 +47,11 @@ export function SiteNav() {
             DonutSMP Guide
           </Link>
           <Link
-            to="/donutsmp-fly-bypass"
+            to="/donutsmp-guide"
             className="transition hover:text-foreground"
-            data-testid="nav-fly"
+            data-testid="nav-deepslate"
           >
-            Fly Bypass
+            Deepslate Bypass
           </Link>
           <Link to="/posts" className="transition hover:text-foreground" data-testid="nav-blog">
             Blog
@@ -105,7 +105,7 @@ export function SiteFooter() {
             DonutSMP Guide
           </Link>
           <Link to="/donutsmp-fly-bypass" className="hover:text-foreground">
-            DonutSMP Fly Bypass
+            Full Deepslate Bypass
           </Link>
           <Link to="/posts" className="hover:text-foreground">
             Blog

@@ -8,23 +8,23 @@ export const Route = createFileRoute("/donutsmp-fly-bypass")({
   head: () => ({
     meta: [
       {
-        title: "DonutSMP Fly Bypass 2026 — The Only Working Fly On DonutSMP (Wizzy Addon)",
+        title: "DonutSMP Deepslate Bypass 2026 — The Only Deepslate Bypass On DonutSMP (Wizzy Addon)",
       },
       {
         name: "description",
         content:
-          "How to fly on DonutSMP in 2026 without getting kicked or banned. Wizzy Addon ships the only working DonutSMP fly bypass. Recommended settings, anti-cheat notes, and free .jar download.",
+          "How to deepslate bypass on DonutSMP in 2026 without getting kicked or banned. Wizzy Addon ships the only working DonutSMP full deepslate bypass. Recommended settings, anti-cheat notes, and free .jar download.",
       },
       {
         name: "keywords",
         content:
-          "donutsmp fly bypass, fly bypass donutsmp, donutsmp fly, how to fly on donutsmp, meteor client fly donutsmp, Wizzy fly bypass, donut smp fly hack",
+          "donutsmp full deepslate bypass, full deepslate bypass donutsmp, donutsmp fly, how to fly on donutsmp, meteor client fly donutsmp, Wizzy full deepslate bypass, donut smp fly hack",
       },
-      { property: "og:title", content: "DonutSMP Fly Bypass — Wizzy Addon (Working in 2026)" },
+      { property: "og:title", content: "DonutSMP Deepslate Bypass — Wizzy Addon (Working in 2026)" },
       {
         property: "og:description",
         content:
-          "The only working DonutSMP fly bypass in 2026. Free .jar, 5-minute install, re-tuned every anti-cheat update.",
+          "The only working DonutSMP full deepslate bypass in 2026. Free .jar, 5-minute install, re-tuned every anti-cheat update.",
       },
       { property: "og:url", content: `${SITE_URL}/donutsmp-fly-bypass` },
       { property: "og:type", content: "article" },
@@ -37,16 +37,16 @@ export const Route = createFileRoute("/donutsmp-fly-bypass")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "DonutSMP Fly Bypass — The Only Working Fly On DonutSMP",
+          headline: "DonutSMP Deepslate Bypass — The Only Deepslate Bypass On DonutSMP",
           description:
-            "How to fly on DonutSMP without getting flagged. Recommended Wizzy Addon settings, anti-cheat tuning notes, free download.",
+            "How to deepslate bypass on DonutSMP without getting flagged. Recommended Wizzy Addon settings, anti-cheat tuning notes, free download.",
           datePublished: "2026-05-02",
           dateModified: "2026-05-02",
           author: { "@type": "Organization", name: "Wizzy Addon" },
           publisher: {
             "@type": "Organization",
             name: "Wizzy Addon",
-            logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.png` },
+            logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` },
           },
           mainEntityOfPage: `${SITE_URL}/donutsmp-fly-bypass`,
           image: `${SITE_URL}/og-card.png`,
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/donutsmp-fly-bypass")({
           mainEntity: [
             {
               "@type": "Question",
-              name: "Is there a working fly bypass on DonutSMP in 2026?",
+              name: "Is there a working full deepslate bypass on DonutSMP in 2026?",
               acceptedAnswer: {
                 "@type": "Answer",
                 text: "Yes. Wizzy Addon's Donut Bypass fly mode is the only public Meteor Client fly that survives DonutSMP's anti-cheat as of May 2026. Every other public fly module gets flagged within seconds.",
@@ -68,7 +68,7 @@ export const Route = createFileRoute("/donutsmp-fly-bypass")({
             },
             {
               "@type": "Question",
-              name: "Will I get banned for using the Wizzy fly bypass on DonutSMP?",
+              name: "Will I get banned for using the Wizzy full deepslate bypass on DonutSMP?",
               acceptedAnswer: {
                 "@type": "Answer",
                 text: "Wizzy's fly is tuned to mimic legitimate packets (slowfall, elytra cancel). It minimises detection risk but doesn't eliminate it. Keep speed under 1.6, motion smoothing on High, and watch the changelog for hotfixes after each DonutSMP anti-cheat update.",
@@ -76,7 +76,7 @@ export const Route = createFileRoute("/donutsmp-fly-bypass")({
             },
             {
               "@type": "Question",
-              name: "How long does the fly bypass stay working after a DonutSMP update?",
+              name: "How long does the full deepslate bypass stay working after a DonutSMP update?",
               acceptedAnswer: {
                 "@type": "Answer",
                 text: "When DonutSMP pushes an anti-cheat update — usually every 2-3 weeks — the bypass may flag for a few hours. Wizzy ships a patched build within 24 hours, usually closer to 6.",
@@ -84,10 +84,10 @@ export const Route = createFileRoute("/donutsmp-fly-bypass")({
             },
             {
               "@type": "Question",
-              name: "Is the Wizzy fly bypass free?",
+              name: "Is the Wizzy full deepslate bypass free?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes. The whole Wizzy Addon is free, including the fly bypass. No paid tier, no key system, no Discord verification. Direct .jar download from GitHub.",
+                text: "Yes. The whole Wizzy Addon is free, including the full deepslate bypass. No paid tier, no key system, no Discord verification. Direct .jar download from GitHub.",
               },
             },
           ],
@@ -110,14 +110,14 @@ function FlyBypassPage() {
             DonutSMP Guide
           </Link>
           <span className="mx-2 opacity-60">/</span>
-          <span className="text-foreground">DonutSMP Fly Bypass</span>
+          <span className="text-foreground">DonutSMP Deepslate Bypass</span>
         </nav>
 
         <div className="font-mono text-xs uppercase tracking-widest text-primary">
-          DonutSMP · Fly Bypass · May 2026
+          DonutSMP · Deepslate Bypass · May 2026
         </div>
         <h1 className="reveal mt-3 text-4xl font-bold tracking-tight md:text-5xl">
-          The only working DonutSMP fly bypass in 2026.
+          The only working DonutSMP full deepslate bypass in 2026.
         </h1>
         <p className="reveal reveal-delay-1 mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
           Short version: every public Meteor Client fly module gets flagged on DonutSMP within
@@ -132,7 +132,7 @@ function FlyBypassPage() {
             className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:opacity-90"
             data-testid="fly-download-btn"
           >
-            <Download className="h-4 w-4" /> Download Wizzy (fly bypass included)
+            <Download className="h-4 w-4" /> Download Wizzy (full deepslate bypass included)
           </a>
           <Link
             to="/install"
@@ -231,7 +231,7 @@ function FlyBypassPage() {
 
         <section className="mt-14">
           <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-            What about other &quot;DonutSMP fly bypass&quot; downloads I see on YouTube?
+            What about other &quot;DonutSMP full deepslate bypass&quot; downloads I see on YouTube?
           </h2>
           <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-muted-foreground">
             <p>Three categories, all bad:</p>
@@ -261,7 +261,7 @@ function FlyBypassPage() {
             {new Date().toISOString().slice(0, 10)}
           </div>
           <h2 className="mt-4 text-2xl font-bold tracking-tight md:text-3xl">
-            Download Wizzy. Get the working DonutSMP fly bypass.
+            Download Wizzy. Get the working DonutSMP full deepslate bypass.
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm text-muted-foreground">
             Free .jar. 5-minute install. Donut Bypass mode ready out of the box.

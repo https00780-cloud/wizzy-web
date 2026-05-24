@@ -6,7 +6,11 @@ export async function notifyDiscordDownload(
   totalCount: number,
   request: Request,
 ): Promise<void> {
-  if (!webhookUrl) return;
+  if (!webhookUrl?.trim()) {
+    console.warn("[discord] DISCORD_DOWNLOAD_WEBHOOK_URL is not set — skipping notification");
+    return;
+  }
+  const url = webhookUrl.trim();
 
   const when = new Date().toISOString();
   const country = request.headers.get("cf-ipcountry") ?? "—";
@@ -35,7 +39,7 @@ export async function notifyDiscordDownload(
   };
 
   try {
-    const res = await fetch(webhookUrl, {
+    const res = await fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(body),

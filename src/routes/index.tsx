@@ -41,7 +41,7 @@ import { SITE_URL, TRACKED_DOWNLOAD_URL } from "../lib/site";
 const faqsForSeo: Array<[string, string]> = [
   [
     "Is Wizzy Addon the best Meteor Client addon for DonutSMP?",
-    "It's the only public Meteor Client addon shipping a working fly bypass on DonutSMP right now, plus base-finding, AH sniping, and Crystal PvP macros tuned for the server's anti-cheat. If you play DonutSMP and use Meteor, there isn't really a closer competitor.",
+    "It's the only public Meteor Client addon shipping a full deepslate bypass on DonutSMP right now, plus base-finding, AH sniping, and Crystal PvP macros tuned for the server's anti-cheat. If you play DonutSMP and use Meteor, there isn't really a closer competitor.",
   ],
   [
     "How do I download Wizzy Addon?",
@@ -49,7 +49,7 @@ const faqsForSeo: Array<[string, string]> = [
   ],
   [
     "Does Wizzy Addon work on DonutSMP without a ban?",
-    "We tune the fly, speed, and combat modules against DonutSMP's anti-cheat profile every patch. Nothing in PvP utilities is risk-free, but Wizzy's bypass configs are currently the most reliable on the server.",
+    "We tune deepslate scan, speed, and combat modules against DonutSMP's anti-cheat profile every patch. Nothing in PvP utilities is risk-free, but Wizzy's bypass configs are currently the most reliable on the server.",
   ],
   [
     "Which Minecraft version does Wizzy Addon support?",
@@ -57,11 +57,11 @@ const faqsForSeo: Array<[string, string]> = [
   ],
   [
     "Is Wizzy Addon free?",
-    "Yes. Always has been, always will be. No paid tiers, no key system, no premium fly. Direct .jar download from GitHub.",
+    "Yes. Always has been, always will be. No paid tiers, no key system, no premium modules. Direct .jar download from GitHub.",
   ],
   [
-    "What makes Wizzy's fly bypass actually work on DonutSMP?",
-    "Wizzy's Donut Bypass mode sends packets that mimic slowfall + elytra-cancel motion rather than raw creative fly. The server reads it as a player with a slowfall potion who's chaining elytra cancels. See the full breakdown at /donutsmp-fly-bypass.",
+    "What makes Wizzy's full deepslate bypass work on DonutSMP?",
+    "Wizzy scans dense deepslate clusters and hidden stashes through walls — shulker ESP, worth tooltips, and chunk density tuned for Donut's map generation. See the full breakdown at /donutsmp-guide.",
   ],
 ];
 
@@ -77,7 +77,7 @@ export const Route = createFileRoute("/")({
       description: HOME_DESC,
       path: "/",
       keywords:
-        "Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, donutsmp fly bypass, meteor client donutsmp, Wizzy meteor addon, Wizzy Addon free download",
+        "Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, full deepslate bypass, meteor client donutsmp, Wizzy meteor addon, Wizzy Addon free download",
     });
     return {
       ...base,
@@ -268,12 +268,12 @@ function StatsMarquee() {
   );
 }
 
-function FlyBypassBanner() {
+function DeepslateBypassBanner() {
   return (
     <section className="border-y border-primary/30 bg-primary/5">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-6 py-6 md:flex-row md:items-center">
         <div className="flex items-start gap-3">
-          <Plane className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+          <Map className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
           <p className="text-sm leading-relaxed md:text-base">
             <span className="font-semibold text-foreground">Full deepslate bypass on DonutSMP.</span>{" "}
             Wizzy Addon ships the deepslate density scan, shulker ESP, and stash tools other Meteor
@@ -315,11 +315,11 @@ function WhatIsWizzy() {
             specifically for <span className="font-semibold text-foreground">DonutSMP</span>. If
             you've used Meteor on Donut before, you already know the deal: half the default modules
             get flagged the second you toggle them, the AH module hasn't been touched in months, and
-            there's no public fly that actually works.
+            there's no public deepslate bypass that actually works.
           </p>
           <p>
             Wizzy exists because we got tired of running three half-broken addons stacked on top of
-            each other. So we rewrote the parts that matter — fly, speed, AH sniper, base-finding,
+            each other. So we rewrote the parts that matter — deepslate bypass, speed, AH sniper, base-finding,
             totem logic — and shipped them as one .jar that gets patched the same day Donut updates.
             That's it. No paid tier, no Discord verification, no key system.
           </p>
@@ -620,7 +620,7 @@ function Testimonials() {
 
 function Comparison() {
   const rows: Array<[string, boolean, boolean, boolean]> = [
-    ["Working fly bypass on DonutSMP", true, false, false],
+    ["Full deepslate bypass on DonutSMP", true, false, false],
     ["AH sniper updated for 1.21.11", true, false, true],
     ["Crystal PvP macros (anchor, wind, pearl)", true, true, false],
     ["Base finder + StorageESP suite", true, false, false],
@@ -690,7 +690,7 @@ function Comparison() {
 
 function RecentActivity() {
   const items = [
-    ["May 2, 2026", "v3.2.0 shipped — fly bypass re-tuned for Donut's May anti-cheat push."],
+    ["May 2, 2026", "v3.2.0 shipped — full deepslate bypass re-tuned for Donut's May anti-cheat push."],
     ["Apr 28, 2026", "AH Sniper latency benchmark: avg 108ms across 1k buys."],
     ["Apr 20, 2026", "Hotfix for StorageESP missing trapped chests through stone."],
     ["Apr 12, 2026", "v3.1.2 hotfix shipped 4h after Donut's 1/26 anti-cheat update."],
@@ -784,7 +784,7 @@ function DownloadSection() {
                 What changed in 3.2.0
               </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>· Re-tuned fly bypass for DonutSMP's May anti-cheat push</li>
+                <li>· Re-tuned full deepslate bypass for DonutSMP's May anti-cheat push</li>
                 <li>· Added Wind Jump and Wind Pearl macros for 1.21.11 wind charges</li>
                 <li>· New Target HUD — health, armour, totem count, distance</li>
                 <li>· AH Sniper latency cut from ~380ms to ~110ms</li>
@@ -874,9 +874,9 @@ function SeoHubLinks() {
   const links = [
     { to: "/install" as const, label: "Wizzy Addon install guide", desc: "Fabric + Meteor + .jar in 5 minutes" },
     {
-      to: "/donutsmp-fly-bypass" as const,
-      label: "DonutSMP fly bypass",
-      desc: "Only working fly on DonutSMP — settings & risks",
+      to: "/donutsmp-guide" as const,
+      label: "Full deepslate bypass",
+      desc: "Deepslate scan, shulker ESP & stash tools",
     },
     {
       to: "/donutsmp-guide" as const,
@@ -914,7 +914,7 @@ function SeoHubLinks() {
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           Every page below targets a real search intent —{" "}
           <span className="text-foreground">Wizzy Addon download</span>,{" "}
-          <span className="text-foreground">meteor client addons donutsmp</span>, fly bypass, AH
+          <span className="text-foreground">meteor client addons donutsmp</span>, deepslate bypass, AH
           sniper, and base finding. Pick your path or grab the free .jar above.
         </p>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -965,7 +965,7 @@ function LiveStatusDashboard() {
   const items = [
     {
       icon: Plane,
-      label: "DonutSMP fly bypass",
+      label: "Full deepslate bypass",
       value: "Working",
       detail: "Patched 6h ago",
       ok: true,
@@ -1037,28 +1037,28 @@ function BypassDiagram() {
   const steps = [
     {
       n: "01",
-      title: "You toggle Fly",
-      body: "Right Shift → Movement → Fly → Mode: Donut Bypass.",
+      title: "You open Ender Chest / stash",
+      body: "Right Shift → Render → Deepslate Scan + Shulker ESP. Worth tooltips show on hover.",
     },
     {
       n: "02",
-      title: "Wizzy intercepts motion",
-      body: 'Instead of sending vanilla "creative" motion, Wizzy constructs a custom packet sequence.',
+      title: "Wizzy scans density",
+      body: "Loaded chunks are checked for unnatural deepslate clusters and buried shulker boxes.",
     },
     {
       n: "03",
-      title: "Packet mimicry",
-      body: "Slowfall-tinted vertical motion + elytra-cancel transitions + gradient velocity. Sent over the same channels a legit player would use.",
+      title: "Stash highlights",
+      body: "Shulkers, obsidian shells, and high-value stacks glow through walls with stack counts.",
     },
     {
       n: "04",
-      title: "Grim sees a legit player",
-      body: "From the anti-cheat's perspective, you're a player chugging slowfall pots between elytra cancels. That's a real human pattern.",
+      title: "Worth overlay",
+      body: "Each container shows estimated value — the same overlay in our in-game screenshots.",
     },
     {
       n: "05",
-      title: "You're flying",
-      body: "No flag, no kick, no ban. As long as Speed stays under 1.6 and you don't push the motion envelope.",
+      title: "You raid the base",
+      body: "Full deepslate bypass means you see what vanilla Meteor and other addons miss on DonutSMP.",
     },
   ];
   return (
@@ -1144,10 +1144,10 @@ function BypassDiagram() {
         <div className="mt-8 text-sm text-muted-foreground">
           Want the full technical breakdown?{" "}
           <Link
-            to="/donutsmp-fly-bypass"
+            to="/donutsmp-guide"
             className="text-foreground underline decoration-primary/40 underline-offset-4"
           >
-            Read the DonutSMP fly bypass page →
+            Read the full deepslate bypass guide →
           </Link>
         </div>
       </div>
@@ -1353,7 +1353,7 @@ function Index() {
         <Hero />
         <StatsMarquee />
         <LiveStatusDashboard />
-        <FlyBypassBanner />
+        <DeepslateBypassBanner />
         <BypassDiagram />
         <WhatIsWizzy />
         <Features />

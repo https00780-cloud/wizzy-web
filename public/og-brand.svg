@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1220"/>
+      <stop offset="100%" stop-color="#121a2e"/>
+    </linearGradient>
+    <linearGradient id="wz" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f8ef7"/>
+      <stop offset="100%" stop-color="#3b6fd4"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6ba3ff"/>
+      <stop offset="100%" stop-color="#4f8ef7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="150" cy="80" r="280" fill="#3b82f6" opacity="0.12"/>
+  <circle cx="1050" cy="580" r="320" fill="#2563eb" opacity="0.1"/>
+  <rect x="72" y="72" width="76" height="76" rx="18" fill="url(#wz)"/>
+  <text x="110" y="124" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="26" font-weight="700" fill="#fff">WZ</text>
+  <text x="170" y="108" font-family="system-ui, sans-serif" font-size="40" font-weight="700" fill="#f4f7ff">Wizzy Addon</text>
+  <text x="170" y="142" font-family="ui-monospace, Consolas, monospace" font-size="16" fill="#8fa8d8" letter-spacing="3">METEOR CLIENT ADDON</text>
+  <text x="72" y="280" font-family="system-ui, sans-serif" font-size="88" font-weight="800" fill="#f4f7ff">Full deepslate bypass</text>
+  <text x="72" y="360" font-family="system-ui, sans-serif" font-size="88" font-weight="800" fill="url(#headline)">for DonutSMP</text>
+  <text x="72" y="430" font-family="system-ui, sans-serif" font-size="30" fill="#a8bddf">90+ modules - Crystal PvP - AH sniper - free jar</text>
+  <text x="72" y="560" font-family="ui-monospace, Consolas, monospace" font-size="28" fill="#6ba3ff">wizzyaddon.com</text>
+</svg>

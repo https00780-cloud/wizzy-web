@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Download, Plane, Radar, Coins, Swords, Check, X } from "lucide-react";
+import { Download, Map, Radar, Coins, Swords, Check, X } from "lucide-react";
 import { PageShell } from "../components/site-chrome";
 
 const SITE_URL = "https://wizzyaddon.com";
@@ -9,23 +9,23 @@ export const Route = createFileRoute("/donutsmp-guide")({
   head: () => ({
     meta: [
       {
-        title: "Wizzy Addon On DonutSMP — Full Guide, Fly Bypass & Best Modules (2026)",
+        title: "Wizzy Addon On DonutSMP — Full Guide, Deepslate Bypass & Best Modules (2026)",
       },
       {
         name: "description",
         content:
-          "The complete Wizzy Addon DonutSMP guide. Working fly bypass, AH sniping, base finding, Crystal PvP setup. Why Wizzy is the best Meteor Client addon for DonutSMP in 2026.",
+          "The complete Wizzy Addon DonutSMP guide. Full deepslate bypass, AH sniping, base finding, Crystal PvP setup. Why Wizzy is the best Meteor Client addon for DonutSMP in 2026.",
       },
       {
         name: "keywords",
         content:
-          "Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, donutsmp fly bypass, donutsmp ah sniper, Wizzy donutsmp guide, donutsmp base finder, meteor client donutsmp",
+          "Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, full deepslate bypass, donutsmp ah sniper, Wizzy donutsmp guide, donutsmp base finder, meteor client donutsmp",
       },
       { property: "og:title", content: "Wizzy Addon On DonutSMP — Full Guide" },
       {
         property: "og:description",
         content:
-          "Working fly bypass, AH sniper setup, base finding, Crystal PvP — the complete Wizzy Addon DonutSMP guide.",
+          "Full deepslate bypass, AH sniper setup, base finding, Crystal PvP — the complete Wizzy Addon DonutSMP guide.",
       },
       { property: "og:url", content: `${SITE_URL}/donutsmp-guide` },
       { property: "og:type", content: "article" },
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/donutsmp-guide")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Wizzy Addon On DonutSMP — Full Guide, Fly Bypass & Best Modules",
+          headline: "Wizzy Addon On DonutSMP — Full Guide, Deepslate Bypass & Best Modules",
           description:
             "The complete Wizzy Addon DonutSMP guide. Working fly bypass, AH sniping, base finding, Crystal PvP setup.",
           datePublished: "2026-05-02",
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/donutsmp-guide")({
           publisher: {
             "@type": "Organization",
             name: "Wizzy Addon",
-            logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.png` },
+            logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` },
           },
           mainEntityOfPage: `${SITE_URL}/donutsmp-guide`,
           image: `${SITE_URL}/og-card.png`,
@@ -84,7 +84,7 @@ function GuidePage() {
           Wizzy Addon on DonutSMP — the complete guide.
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          Everything Wizzy does specifically for DonutSMP — the fly bypass, the AH sniper, the base
+          Everything Wizzy does specifically for DonutSMP — the full deepslate bypass, the AH sniper, the base
           finder stack, and which Crystal PvP modules to actually toggle. Updated May 2026 for
           the 1.21.11 anti-cheat push.
         </p>
@@ -124,53 +124,45 @@ function GuidePage() {
           </div>
         </section>
 
-        {/* Fly bypass */}
-        <section id="fly" className="mt-14 rounded-2xl border border-primary/30 bg-primary/5 p-7">
+        {/* Deepslate bypass */}
+        <section id="deepslate" className="mt-14 rounded-2xl border border-primary/30 bg-primary/5 p-7">
           <div className="mb-3 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-primary">
-            <Plane className="h-3.5 w-3.5" /> The fly bypass
+            <Map className="h-3.5 w-3.5" /> Full deepslate bypass
           </div>
           <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-            The only working fly bypass on DonutSMP.
+            The full deepslate bypass on DonutSMP.
           </h2>
           <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-muted-foreground">
             <p>
-              This is what most people are downloading Wizzy for, so let's be direct about it. Wizzy
-              ships a custom Fly mode called{" "}
-              <span className="font-mono text-foreground">Donut Bypass</span> that imitates
-              legitimate movement packets — slowfall potion motion, elytra cancels, gradient
-              velocity. It doesn't look like vanilla creative flight to the server because it isn't
-              sent that way.
+              This is what most people download Wizzy for. The deepslate density scan flags unnatural
+              clusters, buried shulker boxes, and stash rooms through deepslate — with worth tooltips
+              on every container (same overlay as our in-game screenshots).
             </p>
-            <p>Recommended settings for staying under the radar:</p>
+            <p>Recommended modules to enable:</p>
             <ul className="ml-1 list-inside space-y-1.5 font-mono text-xs">
               <li>
-                · Mode · <span className="text-foreground">Donut Bypass</span>
+                · Deepslate Scan · <span className="text-foreground">Density threshold: Medium</span>
               </li>
               <li>
-                · Speed · <span className="text-foreground">1.2 (do not push past 1.6)</span>
+                · Shulker ESP · <span className="text-foreground">Through walls: true</span>
               </li>
               <li>
-                · Glide · <span className="text-foreground">true</span>
+                · Worth Tooltips · <span className="text-foreground">AH prices: true</span>
               </li>
               <li>
-                · Motion Smoothing · <span className="text-foreground">High</span>
+                · StorageESP · <span className="text-foreground">Chests + ender + shulkers</span>
               </li>
               <li>
-                · Anti-Kick · <span className="text-foreground">true</span>
-              </li>
-              <li>
-                · Y-Speed Cap · <span className="text-foreground">2.4</span>
+                · Chunk Finder · <span className="text-foreground">Recent loads only</span>
               </li>
             </ul>
             <p>
-              When Donut pushes an anti-cheat update (which usually happens every 2-3 weeks), the
-              bypass might flag for a few hours. Keep an eye on the Wizzy GitHub releases — patches
-              drop within 24 hours, usually closer to 6.
+              When Donut pushes a map or anti-cheat update, density thresholds may need a tweak.
+              Patches drop on GitHub within 24 hours — usually closer to 6.
             </p>
             <p className="text-sm">
               <strong className="text-foreground">Disclaimer:</strong> any utility module on a
-              server with rules against them carries risk. Wizzy minimises detection — it doesn't
-              eliminate it.
+              server with rules against them carries risk. Use at your own discretion.
             </p>
           </div>
         </section>
@@ -202,7 +194,7 @@ function GuidePage() {
             <p>
               Realistic numbers: a half-tuned AH Sniper run overnight pulls 80-200k Donut coins. A
               well-tuned one with a custom item list does 5-10× that. The module is the
-              second-most-used reason people stay on Wizzy after fly.
+              second-most-used reason people stay on Wizzy after deepslate bypass.
             </p>
           </div>
         </section>
@@ -310,7 +302,7 @@ function GuidePage() {
               </thead>
               <tbody>
                 {[
-                  ["DonutSMP fly bypass", true, false],
+                  ["Full deepslate bypass", true, false],
                   ["1.21.11 day-one support", true, false],
                   ["AH Sniper sub-150ms latency", true, false],
                   ["Base-finder module stack", true, false],

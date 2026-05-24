@@ -6,7 +6,7 @@ export const SOFTWARE_VERSION = "3.2.0";
 export const MC_VERSION = "1.21.11";
 
 export const DEFAULT_KEYWORDS =
-  "Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, donutsmp fly bypass, meteor client donutsmp, Wizzy meteor addon, donutsmp addon download";
+  "Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, full deepslate bypass, meteor client donutsmp, Wizzy meteor addon, donutsmp addon download";
 
 export type PageHeadOptions = {
   title: string;
@@ -151,7 +151,7 @@ export function siteNavigationSchema() {
   const pages = [
     { name: "Wizzy Addon Download", path: "/#download" },
     { name: "Install Wizzy Addon", path: "/install" },
-    { name: "DonutSMP Fly Bypass", path: "/donutsmp-fly-bypass" },
+    { name: "Full Deepslate Bypass", path: "/donutsmp-guide" },
     { name: "DonutSMP Guide", path: "/donutsmp-guide" },
     { name: "Meteor Client Modules", path: "/modules" },
     { name: "Best Meteor Addons for DonutSMP", path: "/posts/best-meteor-client-addons-for-donutsmp" },

@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "keywords",
         content:
-          "Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, donutsmp fly bypass, meteor client donutsmp",
+          "Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, meteor client addons donutsmp, full deepslate bypass, meteor client donutsmp",
       },
       { name: "author", content: "Wizzy Addon" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
@@ -132,9 +132,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", sizes: "any", href: "/favicon.png" },
-      { rel: "shortcut icon", type: "image/png", href: "/favicon.png" },
-      { rel: "apple-touch-icon", sizes: "1024x1024", href: "/favicon.png" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png" },
+      { rel: "shortcut icon", href: "/favicon.svg" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       { rel: "manifest", href: "/site.webmanifest" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
@@ -153,7 +154,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           alternateName: ["Wizzy Meteor Client Addon", "Wizzy DonutSMP Addon"],
           url: "https://wizzyaddon.com",
           image: "https://wizzyaddon.com/og-card.png",
-          logo: "https://wizzyaddon.com/favicon.png",
+          logo: "https://wizzyaddon.com/favicon.svg",
           description:
             "Wizzy Addon — the Meteor Client addon for DonutSMP and Minecraft 1.21.11. Full deepslate bypass, 90+ modules, free .jar download.",
           inLanguage: "en",
@@ -171,7 +172,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "Wizzy Addon",
           url: "https://wizzyaddon.com",
-          logo: "https://wizzyaddon.com/favicon.png",
+          logo: "https://wizzyaddon.com/favicon.svg",
         }),
       },
     ],
