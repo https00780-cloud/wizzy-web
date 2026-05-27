@@ -18,4 +18,4 @@ Wizzy Addon, Wizzy Addon download, Wizzy Addon donutsmp, best addon donut smp, m
 
 Tracked download URL (increments counter, redirects to GitHub .jar): https://wizzyaddon.com/download
 
-File: WizzyAddon1.21.11.jar · Fabric 1.21.11 · requires Meteor Client
+File: Wizzy Addon 1.21.11.jar · Fabric 1.21.11 · requires Meteor Client

@@ -467,7 +467,7 @@ function TerminalInstall() {
               {"\n"}
               <span className="text-foreground">meteor-client-0.5.10+1.21.11.jar</span>
               {"\n"}
-              <span className="text-[oklch(0.72_0.18_240)]">WizzyAddon1.21.11.jar ← this site</span>
+              <span className="text-[oklch(0.72_0.18_240)]">Wizzy Addon 1.21.11.jar ← this site</span>
               {"\n\n"}
               <span className="text-muted-foreground">
                 # 3 · launch the fabric-loader-1.21.11 profile
@@ -759,7 +759,7 @@ function DownloadSection() {
           </div>
           <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2">
             <div>
-              <h3 className="text-2xl font-bold">WizzyAddon1.21.11.jar</h3>
+              <h3 className="text-2xl font-bold">Wizzy Addon 1.21.11.jar</h3>
               <div className="mt-3 flex flex-wrap gap-2 font-mono text-xs">
                 <span className="rounded-full bg-secondary px-3 py-1">Fabric 1.21.11</span>
                 <span className="rounded-full bg-secondary px-3 py-1">Meteor Client</span>
